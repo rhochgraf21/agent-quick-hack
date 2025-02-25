@@ -3,8 +3,10 @@
 
 import os
 import dotenv
+import OpenAI
 
-dotenv.load_dotenv()
+load_dotenv()
 OPENAI_API_KEY = ""
+key = os.getenv("OPENAI_KEY")
 
-model  = OpenAI(model="gpt-4o-mini", api_key=os.environ["OPENAI_API_KEY"])
+model  = ChatOpenAI(model="gpt-4o-mini", api_key=os.environ["OPENAI_API_KEY"])
