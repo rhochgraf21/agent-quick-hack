@@ -10,5 +10,4 @@ psycopg2-binary==2.9.9
 # The python-dotenv package provides the dotenv module imported in controller.py
 python-dotenv==1.0.0
 requests==2.32.2
-
-python-dotenv==1.0.0
+openai==1.12.0
