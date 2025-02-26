@@ -1,0 +1,27 @@
+Column Name,Data Type,Description,Example
+PermitNum,TEXT,Unique permit tracking number,PERMIT-2023-001
+PermitClass,TEXT,Permit class type,Residential
+PermitClassMapped,TEXT,Residential/Non-Residential,Residential
+PermitTypeMapped,TEXT,Permit type category (e.g., building, demolition),Building
+PermitTypeDesc,TEXT,Additional permit type details,Addition/Alteration
+Description,TEXT,Description of work,Addition of a second story to the existing house.
+HousingUnits,INTEGER,Initial number of housing units,3
+HousingUnitsRemoved,INTEGER,Number of housing units removed,0
+HousingUnitsAdded,INTEGER,Number of housing units added,1
+EstProjectCost,REAL,Estimated project cost,150000.00
+AppliedDate,TEXT,Date permit application was accepted,2023-03-15
+IssuedDate,TEXT,Date permit was issued,2023-04-10
+ExpiresDate,TEXT,Date permit expires,2024-04-09
+CompletedDate,TEXT,Date permit inspections were completed,2024-03-22
+StatusCurrent,TEXT,Current status of the permit,Issued
+RelatedMup,TEXT,Related land use permit,LANDUSE-2023-002
+OriginalAddress1,TEXT,Street address,123 Main St
+OriginalCity,TEXT,City,Anytown
+OriginalState,TEXT,State,CA
+OriginalZip,INTEGER,Zip code,91234
+ContractorCompanyName,TEXT,Contractor name,ABC Construction
+Link,TEXT,Link to permit details,https://example.com/permit-2023-001
+Latitude,REAL,Latitude of project location,34.0522
+Longitude,REAL,Longitude of project location,-118.2437
+Location1,TEXT,Location string (likely latitude/longitude),34.0522,-118.2437
+NeighborDistrict,TEXT,Neighborhood/District the property is located in,Downtown
