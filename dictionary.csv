@@ -24,4 +24,4 @@ Link,TEXT,Link to permit details,https://example.com/permit-2023-001
 Latitude,REAL,Latitude of project location,34.0522
 Longitude,REAL,Longitude of project location,-118.2437
 Location1,TEXT,Location string (likely latitude/longitude),34.0522,-118.2437
-NeighborDistrict,TEXT,Neighboring district,Downtown
+NeighborDistrict,TEXT,Neighborhood/District the property is located in,Downtown

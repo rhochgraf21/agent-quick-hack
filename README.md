@@ -6,6 +6,21 @@ Let's try to build an agent in an hour. Can it be done?
 
 [How to contribute](CONTRIBUTING.md)
 
+## Instructions
+
+Install requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+Generate the SQL databases
+
+```bash
+python dataset_to_sqlite.py
+```
+
+
 ## Running the Flask Server:
 
 ```
