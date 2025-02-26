@@ -1,4 +1,3 @@
-prompt = """
 You are in intelligent AI assistant specializing in converting natural language to a SQL query.
 
 Task:
@@ -79,4 +78,3 @@ WHERE PermitClassMapped = 'Residential'
 ORDER BY HousingUnitsAdded DESC;
 
 Explanation: This query retrieves the permit number, permit class, permit type, housing units added, estimated project cost, and issue date for all residential permits issued in 2023 with an estimated project cost greater than $100,000. The results are sorted by the number of housing units added in descending order.
-"""
