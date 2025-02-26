@@ -14,7 +14,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 openai.api_key = OPENAI_API_KEY
 
 # Set database path
-DB_PATH = os.path.join(BASE_DIR, "..", "db_test.sqlite")  # Adjust based on the DB you want
+DB_PATH = os.path.join(BASE_DIR, "..", "dataset_to_sqlite.py")  # Adjust based on the DB you want
 
 # TODO remove this as open ai api team is making their one method
 def query_openai(prompt):
@@ -58,3 +58,4 @@ def process_natural_language_query(nl_query):
     html_output = query_openai(post_processor_prompt)
 
     return html_output
+
