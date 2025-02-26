@@ -3,7 +3,7 @@ import sys
 
 
 def query_table(query):
-    con = sqlite3.connect("db_test.sqlite")
+    con = sqlite3.connect("housing_data.sqlite")
 
     cur = con.cursor()
 
