@@ -39,7 +39,16 @@ def get():
 
 @app.route('/report', methods=['POST'])
 def report():
-    return jsonify({"HI": "HI"})
+    name = request.form.get('name')
+    message = request.form.get('message')
+
+    if not name or not message:
+        return jsonify({"error": "Both name and message are required"}), 400
+
+    return jsonify({
+        "name": name,
+        "message": message
+    })
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=6969)
