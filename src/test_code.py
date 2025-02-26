@@ -1,8 +1,13 @@
 import openai
 import sqlite3  # Assuming SQLite for database operations
+import dotenv
+import os
+
+dotenv()
+
 
 # Set your OpenAI API key
-openai.api_key = 'your-openai-api-key'
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # Function to read prompts from text files
 def read_prompt(file_path):
@@ -35,7 +40,7 @@ def check_sql_vulnerability(sql_query):
 
 # Function to execute SQL query (using SQLite as an example)
 def execute_sql_query(sql_query):
-    conn = sqlite3.connect('example.db')  # Connect to your database
+    conn = sqlite3.connect('../housing_data.sqlite')  # Connect to your database
     cursor = conn.cursor()
     cursor.execute(sql_query)
     results = cursor.fetchall()
