@@ -9,6 +9,7 @@ psycopg2-binary==2.9.9
 python-dotenv==1.0.0
 requests==2.32.2
 openai==1.12.0
-langchain==0.3.19
-langchain-core==0.2.10
-pydantic==2.6.1
+# Using compatible versions for langchain ecosystem
+langchain>=0.3.19
+langchain-core>=0.3.35
+pydantic>=2.7.4
