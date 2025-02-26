@@ -7,16 +7,17 @@ dataset_name = "HathawayLiu/housing_dataset"
 ds = load_dataset(dataset_name)
 print(f"Loaded dataset: {dataset_name}" )
 
-for split in ds.keys():
-    # Convert dataset to pandas DataFrame
-    df = ds[split].to_pandas()
-    print(f"converted {split} to pandas DataFrame")
+df = pd.concat([ds['train'].to_pandas(), ds['test'].to_pandas()])
 
-    db_filename = f"db_{split}.sqlite"
 
-    # Connect to SQLite and save DataFrame
-    conn = sqlite3.connect(db_filename)
-    df.to_sql(split, conn, index=False, if_exists="replace")
-    conn.close()
 
-    print(f"Saved {split} dataset as {db_filename}")
+db_filename = f"housing_data.sqlite"
+
+
+
+# Connect to SQLite and save DataFrame
+conn = sqlite3.connect(db_filename)
+df.to_sql("housing_data", conn, index=False, if_exists="replace")
+conn.close()
+
+print(f"Saved dataset as {db_filename}")
